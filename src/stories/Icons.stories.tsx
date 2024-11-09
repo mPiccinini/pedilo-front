@@ -8,6 +8,8 @@ import { BagIcon } from "@/icons/BagIcon";
 import { RecipeIcon } from "@/icons/RecipeIcon";
 import { BasketIcon } from "@/icons/BasketIcon";
 import { HeartIcon } from "@/icons/HeartIcon";
+import { ArrowBackIcon } from "@/icons/ArrowBackIcon";
+import { ClockIcon } from "@/icons/ClockIcon";
 
 type StoryProps = {
     iconColor: string;
@@ -314,3 +316,36 @@ export const HeartIconVariant2: Story = {
     },
 };
 
+export const ArrowBackIconVariant1: Story = {
+    args: {
+        iconColor: 'black',
+        size: '32px',
+        variant: 'variant1',
+    },
+    render: (args) => {
+        return (
+            <ArrowBackIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
+
+export const ClockIconVariant1: Story = {
+    args: {
+        iconColor: 'black',
+        size: '32px',
+        variant: 'variant1',
+    },
+    render: (args) => {
+        return (
+            <ClockIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
