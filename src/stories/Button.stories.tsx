@@ -5,6 +5,7 @@ import {fn} from "@storybook/test";
 
 type StoryProps = ComponentProps<typeof Button> & {
     buttonText: string;
+    icon: string;
 };
 
 const meta: Meta<StoryProps> = {
@@ -17,7 +18,7 @@ const meta: Meta<StoryProps> = {
             }
         },
         icon: {
-            options: ['add', 'remove'],
+            options: ['on', 'off'],
             control: {
                 type: 'select',
             }
@@ -34,13 +35,36 @@ type Story = StoryObj<StoryProps>;
 
 export const Default: Story = {
     args: {
-        buttonText: "Ingredientes",
+        buttonText: "Label",
         variant: "default",
+        icon: "off",
     },
-    render: ({buttonText, ...args}) => {
-        return (<Button {...args}>
-            <p>icon</p>
-            {buttonText}
-        </Button>)
-    }
-}
+    render: ({ buttonText, icon, ...args }) => {
+        return (
+            <div className={"flex items-center justify-center mt-60"}>
+                <Button {...args}>
+                    {icon === "on" && <p>icon</p>}
+                    {buttonText}
+                </Button>
+            </div>
+        );
+    },
+};
+
+export const Branch: Story = {
+    args: {
+        buttonText: "Ingredientes",
+        variant: "branch",
+        icon: "on",
+    },
+    render: ({ buttonText, icon, ...args }) => {
+        return (
+            <div className={"flex items-center justify-center mt-60"}>
+                <Button {...args}>
+                    {icon === "on" && <p>icon</p>}
+                    {buttonText}
+                </Button>
+            </div>
+        );
+    },
+};

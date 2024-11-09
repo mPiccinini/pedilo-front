@@ -5,11 +5,11 @@ import {cn} from "../utils/UtilFunctions.ts";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> ,VariantProps<typeof buttonVariants> {}
 
 const buttonVariants = cva(
-    "flex items-center justify-center space-x-2 rounded-2xl text-title3",
+    "flex flex-row items-center justify-center rounded-2xl text-title3 gap-[12px] ",
     {
       variants: {
         variant: {
-          branch: "bg-primary-50 shadow-xl text-label1 w-[190px] h-[89px]",
+          branch: "bg-primary-50 shadow-xl text-label2 w-[163px] h-[71px] p-[16px]",
           default: "bg-primary-400 text-label1 text-white h-[40px] w-[251px]"
         }
       },
