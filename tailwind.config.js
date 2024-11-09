@@ -19,7 +19,7 @@ export default {
       },
       colors: {
         primary: {
-          50: '#fcdf9d',
+          50: '#FFF8F0',
           100: '#f2bd7b',
           200: '#f7b75a',
           300: '#eaa643',
