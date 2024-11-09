@@ -5,7 +5,7 @@ interface BasketIconProps {
   size?: number;
 }
 
-const BasketIcon: FC<BasketIconProps> = ({ color = "#5B4637", size = 24 }) => {
+export const BasketIcon: FC<BasketIconProps> = ({ color = "#5B4637", size = 24 }) => {
   return (
     <div
       className="relative flex justify-center items-center"

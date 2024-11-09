@@ -5,7 +5,7 @@ interface RecipeIconProps {
   size?: number;
 }
 
-const RecipeIcon: FC<RecipeIconProps> = ({ color = "#000", size = 24 }) => {
+export const RecipeIcon: FC<RecipeIconProps> = ({ color = "#000", size = 24 }) => {
   return (
     <div
       className="flex justify-center items-center"

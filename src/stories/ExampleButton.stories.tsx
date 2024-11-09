@@ -28,6 +28,6 @@ export const Default: Story = {
         variant: "default",
     },
     render: (args) => {
-        return (<ExampleButton onClick={() => console.log("Clickeao")} variant={args.variant}>{args.buttonText}</ExampleButton>)
+        return (<ExampleButton onClick={() => console.log("Clickeado")} variant={args.variant}>{args.buttonText}</ExampleButton>)
     }
 }
