@@ -7,6 +7,7 @@ import { HomeIcon } from "@/icons/HomeIcon";
 import { BagIcon } from "@/icons/BagIcon";
 import { RecipeIcon } from "@/icons/RecipeIcon";
 import { BasketIcon } from "@/icons/BasketIcon";
+import { HeartIcon } from "@/icons/HeartIcon";
 
 type StoryProps = {
     iconColor: string;
@@ -278,3 +279,38 @@ export const BasketIconVariant3: Story = {
         );
     },
 };
+
+export const HeartIconVariant1: Story = {
+    args: {
+        iconColor: 'black',
+        size: '32px',
+        variant: 'variant1',
+    },
+    render: (args) => {
+        return (
+            <HeartIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
+
+export const HeartIconVariant2: Story = {
+    args: {
+        iconColor: 'orange',
+        size: '32px',
+        variant: 'variant2',
+    },
+    render: (args) => {
+        return (
+            <HeartIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
+
