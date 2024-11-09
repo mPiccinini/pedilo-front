@@ -5,12 +5,12 @@ import {cn} from "../utils/UtilFunctions.ts";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> ,VariantProps<typeof buttonVariants> {}
 
 const buttonVariants = cva(
-    "flex items-center justify-center space-x-2 font-semibold rounded-2xl px-6 py-4",
+    "flex flex-row items-center justify-center rounded-2xl text-title3 gap-[12px] ",
     {
       variants: {
         variant: {
-          default: "bg-[#f9f6f2] text-black shadow-lg",
-          outlined: "bg-transparent border border-black text-black"
+          branch: "bg-primary-50 shadow-xl text-label2 w-[163px] h-[71px] p-[16px]",
+          default: "bg-primary-400 text-label1 text-white h-[40px] w-[251px]"
         }
       },
       defaultVariants: {
@@ -19,10 +19,10 @@ const buttonVariants = cva(
     }
 );
 
-const ExampleButton = forwardRef<HTMLButtonElement, ButtonProps>(({className, variant, ...props }, ref) => {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({className, variant, ...props }, ref) => {
     return (
         <button ref={ref} className={cn(buttonVariants({className, variant}))} {...props}></button>
     );
 })
 
-export default ExampleButton;
+export default Button;

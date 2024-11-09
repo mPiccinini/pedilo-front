@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import ExampleButton from "./components/ExampleButton.tsx";
+import Button from "./components/Button.tsx";
 
 createRoot(document.getElementById('root')!).render(
-    <ExampleButton variant={"default"}>
+    <Button variant={"default"}>
         Texto
-    </ExampleButton>,
+    </Button>,
 )
