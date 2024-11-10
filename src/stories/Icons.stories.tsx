@@ -11,6 +11,7 @@ import { HeartIcon } from "@/icons/HeartIcon";
 import { ArrowBackIcon } from "@/icons/ArrowBackIcon";
 import { ClockIcon } from "@/icons/ClockIcon";
 import { CircularAddIcon } from "@/icons/CircularAddIcon";
+import {StarIcon} from "@/icons/StarIcon";
 
 
 type StoryProps = {
@@ -363,6 +364,40 @@ export const CircularAddIconVariant1: Story = {
     render: (args) => {
         return (
             <CircularAddIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
+
+export const StarIconVariant1: Story = {
+    args: {
+        iconColor: 'black',
+        size: '32px',
+        variant: 'variant1',
+    },
+    render: (args) => {
+        return (
+            <StarIcon
+                iconColor={args.iconColor}
+                size={args.size}
+                variant={args.variant}
+            />
+        );
+    },
+};
+
+export const StarIconVariant2: Story = {
+    args: { 
+        iconColor: 'black',
+        size: '32px',
+        variant: 'variant2',
+    },
+    render: (args) => {
+        return (
+            <StarIcon
                 iconColor={args.iconColor}
                 size={args.size}
                 variant={args.variant}
