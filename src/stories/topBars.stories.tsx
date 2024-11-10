@@ -1,9 +1,9 @@
-import NavBar from '@/components/navBar/NavBarComponent';
 import { Meta, StoryObj } from '@storybook/react';
+import TopBarComponent from '@/components/topBars/TopBarComponent';
 
 const meta: Meta = {
-  title: 'Components/NavBar',
-  component: NavBar,
+  title: 'Components/TopBar',
+  component: TopBarComponent,
   argTypes: {
     backgroundColor: {
       options: ['bg-white', 'bg-gray-100', 'bg-blue-200', 'bg-green-300'],
@@ -12,7 +12,7 @@ const meta: Meta = {
       },
     },
     variant: {
-      options: ['variant1', 'variant2', 'variant3', 'variant4', 'variant5'],
+      options: ['variant1', 'variant2', 'variant3'],
       control: {
         type: 'select',
       },
@@ -22,44 +22,31 @@ const meta: Meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof NavBar>;
+type Story = StoryObj<typeof TopBarComponent>;
 
 export const Variant1: Story = {
   args: {
     backgroundColor: 'bg-white',
+    title: 'Title',
     variant: 'variant1',
   },
-  render: (args) => <NavBar {...args} />,
+  render: (args) => <TopBarComponent {...args} />,
 };
 
 export const Variant2: Story = {
   args: {
     backgroundColor: 'bg-gray-100',
+    title: 'Title',
     variant: 'variant2',
   },
-  render: (args) => <NavBar {...args} />,
+  render: (args) => <TopBarComponent {...args} />,
 };
 
 export const Variant3: Story = {
   args: {
     backgroundColor: 'bg-blue-200',
+    title: 'Title',
     variant: 'variant3',
   },
-  render: (args) => <NavBar {...args} />,
-};
-
-export const Variant4: Story = {
-  args: {
-    backgroundColor: 'bg-green-300',
-    variant: 'variant4',
-  },
-  render: (args) => <NavBar {...args} />,
-};
-
-export const Variant5: Story = {
-  args: {
-    backgroundColor: 'bg-white',
-    variant: 'variant5',
-  },
-  render: (args) => <NavBar {...args} />,
+  render: (args) => <TopBarComponent {...args} />,
 };

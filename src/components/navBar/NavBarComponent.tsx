@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarItem from './NavBarItem';
+import NavBarItem from '@/components/navBar/NavBarItem';
 
 import HomeIcon from "@/icons/HomeIcon";
 import RecipeIcon from "@/icons/RecipeIcon";
@@ -13,7 +13,7 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ backgroundColor, variant }) => {
-    const defaultColor = 'text-black';
+    const defaultColor = 'black';
     const highlightColor = 'text-orange-500';
 
     return (

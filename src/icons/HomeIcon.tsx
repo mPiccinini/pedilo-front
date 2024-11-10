@@ -2,7 +2,7 @@
 import React from 'react';
 import { IconInterface } from './IconInterface';
 
-const HomeIcon: React.FC<IconInterface> = ({ iconColor, size }) => {
+export const HomeIcon: React.FC<IconInterface> = ({ iconColor, size }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
