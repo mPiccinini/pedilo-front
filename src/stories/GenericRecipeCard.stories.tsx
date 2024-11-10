@@ -1,20 +1,62 @@
-import { Meta, Story } from '@storybook/react';
-import GenericRecipeCard from '@/components/GenericRecipeCard';
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import GenericRecipeCard from "@/components/GenericRecipeCard"; 
+import { HeartIcon } from "@/icons/HeartIcon"; 
+import { StarIcon } from "@/icons/StarIcon";
 
-export default {
-  title: 'Components/GenericRecipeCard',
+const meta: Meta = {
+  title: "Components/GenericRecipeCard",
   component: GenericRecipeCard,
-} as Meta;
+  argTypes: {
+    imageSrc: {
+      control: { type: "text" },
+      description: "URL de la imagen de la receta",
+      defaultValue: "https://via.placeholder.com/129x144",
+    },
+    heartVariant: {
+      control: { type: "select" },
+      options: ["variant1", "variant2"],
+      description: "Variante del icono de corazón",
+      defaultValue: "variant1",
+    },
+    starVariants: {
+      control: { type: "array" },
+      description: "Variantes de las estrellas (con un máximo de 5).",
+      defaultValue: ["variant1", "variant1", "variant1", "variant1", "variant1"],
+    },
+    title: {
+      control: { type: "text" },
+      description: "Título de la receta",
+      defaultValue: "Tarta de Manzana",
+    },
+    prepTime: {
+      control: { type: "text" },
+      description: "Tiempo de preparación de la receta",
+      defaultValue: "30",
+    },
+    difficultyLevel: {
+      control: { type: "text" },
+      description: "Nivel de dificultad de la receta",
+      defaultValue: "Nivel de dificultad:",
+    },
+    actionTexts: {
+      control: { type: "array" },
+      description: "Acciones disponibles para la receta (por ejemplo, agregar a favoritos)",
+      defaultValue: ["healthy", "easy"],
+    },
+  },
+};
 
-const Template: Story = (args) => <GenericRecipeCard {...args} />;
+export default meta;
 
-export const Default = Template.bind({});
-Default.args = {
-  imageSrc: 'https://via.placeholder.com/150',  
-  heartVariant: 'variant1',  
-  starVariants: ['variant1', 'variant2', 'variant1', 'variant2', 'variant1'],  
-  title: 'Delicious Recipe',  
-  prepTime: '20',  
-  difficultyLevel: 'Medium', 
-  actionTexts: ['Text 1', 'Text 2'],  
+export const Default: Story = {
+  args: {
+    imageSrc: "https://via.placeholder.com/129x144",
+    heartVariant: "variant1",
+    starVariants: ["variant1", "variant1", "variant1", "variant1", "variant1"],
+    title: "Tarta de Manzana",
+    prepTime: "30",
+    difficultyLevel: "Nivel de dificultad",
+    actionTexts: ["Ver receta", "Añadir a favoritos"],
+  },
 };
