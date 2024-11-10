@@ -1,19 +1,35 @@
-// HomeIcon.tsx
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';
-
-export const HomeIcon: React.FC<IconInterface> = ({ iconColor, size }) => {
+//prueba d icono
+export const HomeIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
     return (
         <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill={iconColor}
+            ref={ref}
+
             width={size}
             height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M12 3l10 9-1 1-3-2V19h-6V12H9v7H3V11l-1-1 10-9z" />
+            {variant === "variant1" ? (
+                <path 
+                    d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" 
+                    stroke={iconColor}
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            ) : (
+                // es variant2
+                <path 
+                    d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" 
+                    stroke={iconColor}
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            )}
         </svg>
     );
-};
-
-export default HomeIcon;
+});
