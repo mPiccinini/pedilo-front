@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import  { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';
 
 export const BagIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
@@ -32,3 +32,5 @@ export const BagIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'va
         </svg>
     );
 });
+
+export default BagIcon;

@@ -1,36 +1,65 @@
-import { Meta, StoryObj } from "@storybook/react";
-import RecipeIcon from "@/components/RecipeIcon";
-import BasketIcon from "@/components/BasketIcon";
+import NavBar from '@/components/NavBar/NavBarComponent';
+import { Meta, StoryObj } from '@storybook/react';
 
-type StoryProps = {
-  color: string;
-  size: number;
-};
-
-const meta: Meta<StoryProps> = {
-  title: "NavBarIcons",
+const meta: Meta = {
+  title: 'Components/NavBar',
+  component: NavBar,
   argTypes: {
-    color: { control: 'color' },
-    size: { control: 'number' },
+    backgroundColor: {
+      options: ['bg-white', 'bg-gray-100', 'bg-blue-200', 'bg-green-300'],
+      control: {
+        type: 'select',
+      },
+    },
+    variant: {
+      options: ['variant1', 'variant2', 'variant3', 'variant4', 'variant5'],
+      control: {
+        type: 'select',
+      },
+    },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<StoryProps>;
+type Story = StoryObj<typeof NavBar>;
 
-export const RecipeIconStory: Story = {
+export const Variant1: Story = {
   args: {
-    color: "#000",
-    size: 24,
+    backgroundColor: 'bg-white',
+    variant: 'variant1',
   },
-  render: (args) => <RecipeIcon color={args.color} size={args.size} />,
+  render: (args) => <NavBar {...args} />,
 };
 
-export const BasketIconStory: Story = {
+export const Variant2: Story = {
   args: {
-    color: "#5B4637",
-    size: 24,
+    backgroundColor: 'bg-gray-100',
+    variant: 'variant2',
   },
-  render: (args) => <BasketIcon color={args.color} size={args.size} />,
+  render: (args) => <NavBar {...args} />,
+};
+
+export const Variant3: Story = {
+  args: {
+    backgroundColor: 'bg-blue-200',
+    variant: 'variant3',
+  },
+  render: (args) => <NavBar {...args} />,
+};
+
+export const Variant4: Story = {
+  args: {
+    backgroundColor: 'bg-green-300',
+    variant: 'variant4',
+  },
+  render: (args) => <NavBar {...args} />,
+};
+
+export const Variant5: Story = {
+  args: {
+    backgroundColor: 'bg-white',
+    variant: 'variant5',
+  },
+  render: (args) => <NavBar {...args} />,
 };
