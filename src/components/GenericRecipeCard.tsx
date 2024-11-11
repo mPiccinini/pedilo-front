@@ -22,7 +22,7 @@ function GenericRecipeCard({
   actionTexts,
 }: GenericRecipeCardProps) {
   return (
-    <div className="relative flex w-[240px] h-[140px] bg-primary-50 rounded-lg shadow-lg overflow-hidden"> {/* Ajuste de tamaño de tarjeta */}
+    <div className="relative flex w-[320px] h-[140px] bg-primary-50 rounded-lg shadow-lg overflow-hidden"> {/* Ajuste de tamaño de tarjeta */}
       <div className="flex flex-col justify-between p-2 w-full">
         <div className="flex flex-col mb-1">
           <h2 className="font-bold text-[14px] text-gray-800 mb-1 truncate">{title}</h2>
@@ -46,7 +46,9 @@ function GenericRecipeCard({
         </div>
       </div>
 
+
       <div className="relative w-[90px] h-full"> 
+
         <div className="absolute top-2 right-2 z-10">
           <HeartIcon variant={heartVariant} size="18px" iconColor="#531326" />
         </div>
