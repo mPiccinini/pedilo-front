@@ -7,15 +7,15 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> ,VariantPr
 const buttonVariants = cva(
     "flex flex-row items-center justify-center rounded-2xl text-title3 gap-[12px] ",
     {
-      variants: {
-        variant: {
-          default: "bg-primary-400 shadow-xl text-label1 text-white h-[40px] w-auto min-w-[251px]",
-          pressed: "bg-primary-500 text-label1 text-white h-[40px] w-auto min-w-[251px] border-4 border-primary-600"
+        variants: {
+            variant: {
+                default: "bg-primary-50 shadow-xl text-label2 w-auto min-w-[163px] h-[71px] p-[16px]",
+                pressed: "bg-tertiary-50 text-label2 w-auto min-w-[163px] h-[71px] p-[16px]"
+            }
+        },
+        defaultVariants: {
+            variant: "default"
         }
-      },
-      defaultVariants: {
-        variant: "default"
-      }
     }
 );
 
