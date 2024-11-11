@@ -1,8 +1,5 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 import GenericRecipeCard from "@/components/GenericRecipeCard"; 
-import { HeartIcon } from "@/icons/HeartIcon"; 
-import { StarIcon } from "@/icons/StarIcon";
 
 const meta: Meta = {
   title: "Components/GenericRecipeCard",
@@ -20,7 +17,7 @@ const meta: Meta = {
       defaultValue: "variant1",
     },
     starVariants: {
-      control: { type: "array" },
+      control: { type: "object" },
       description: "Variantes de las estrellas (con un máximo de 5).",
       defaultValue: ["variant1", "variant1", "variant1", "variant1", "variant1"],
     },
@@ -40,7 +37,7 @@ const meta: Meta = {
       defaultValue: "Nivel de dificultad:",
     },
     actionTexts: {
-      control: { type: "array" },
+      control: { type: "object" },
       description: "Acciones disponibles para la receta (por ejemplo, agregar a favoritos)",
       defaultValue: ["healthy", "easy"],
     },
@@ -49,7 +46,7 @@ const meta: Meta = {
 
 export default meta;
 
-export const Default: Story = {
+export const Default: StoryFn = {
   args: {
     imageSrc: "https://via.placeholder.com/129x144",
     heartVariant: "variant1",
