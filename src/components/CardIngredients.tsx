@@ -7,8 +7,8 @@ interface CardIngredientsProps {
   description: string;  
 }
 
-function CardIngredients({ imageSrc, variant, title, description }: CardIngredientsProps) {
-  return (
+const CardIngredients: React.FC<CardIngredientsProps> = ({ imageSrc, variant, title, description }) => {
+    return (
     <div 
       className="relative flex flex-col items-center p-2 shadow-lg bg-primary-50 rounded-lg w-[123px] h-[142px]"
     >
@@ -25,10 +25,10 @@ function CardIngredients({ imageSrc, variant, title, description }: CardIngredie
       />
 
       <div 
-        className="absolute top-[97px] left-[8px] w-[120px] h-[36px] text-left"
+        className="absolute top-[92px] left-[8px] w-[107px] text-left"
       >
-        <p className="title3 text-gray-800 leading-none truncate">{title}</p> 
-        <p className="body3 text-gray-600 leading-none truncate mt-0">{description}</p> 
+        <p className="text-sm font-semibold text-gray-800 leading-tight">{title}</p> 
+        <p className="text-xs text-gray-600 mt-0.5 truncate">{description}</p> 
       </div>
     </div>
   );

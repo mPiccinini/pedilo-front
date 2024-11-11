@@ -70,6 +70,9 @@ export default {
         brightYellow: '#FFE100',
         red: '#D81A13',
       },
+      boxShadow: {
+        'custom-light': '0px 4px 4px rgba(0, 0, 0, 0.25)',
+      },
     },
   },
   plugins: [],

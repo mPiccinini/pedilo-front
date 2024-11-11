@@ -1,13 +1,12 @@
 import { Meta, StoryObj } from "@storybook/react";
 import CardIngCarrousel from "@/components/CardIngCarrousel";  
-import React from "react";
 
 const meta: Meta<typeof CardIngCarrousel> = {
   title: "Components/CardIngCarrousel",
   component: CardIngCarrousel,
   argTypes: {
     imageSrcs: {
-      control: { type: "array" },  
+      control: { type: "object" },  
       description: "Array de URLs de imágenes para las tarjetas",
       defaultValue: [
         "https://via.placeholder.com/150",
@@ -16,17 +15,17 @@ const meta: Meta<typeof CardIngCarrousel> = {
       ],
     },
     variants: {
-      control: { type: "array" },  
+      control: { type: "object" },  
       description: "Array de variantes para los corazones de las tarjetas",
       defaultValue: ["variant1", "variant1", "variant2"],
     },
     titles: {
-      control: { type: "array" },
+      control: { type: "object" },
       description: "Array de títulos para las tarjetas",
       defaultValue: ["Bife de Chorizo", "Asado", "Vacío"],
     },
     descriptions: {
-      control: { type: "array" },  
+      control: { type: "object" },  
       description: "Array de descripciones para las tarjetas",
       defaultValue: ["Delicioso corte de carne", "Ideal para parrilladas", "Corte suave y tierno"],
     },
