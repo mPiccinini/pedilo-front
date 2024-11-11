@@ -13,7 +13,7 @@ const ListItem: React.FC<ListItemProps> = ({ text }) => {
         <ClockIcon iconColor="currentColor" size="24px" />
       </div>
       
-      <div className="flex-grow ml-4 font-roboto text-body3 text-black">
+      <div className="flex-grow ml-4 font-roboto text-body1 text-black">
         {text}
       </div>
       
