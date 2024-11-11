@@ -36,7 +36,7 @@ export default function IngredientList({ ingredients, prices }: IngredientListPr
     <div className="p-4 bg-white rounded-lg shadow-custom-light w-[350px]" >
       <div className="flex items-center mb-4">
         <CheckBoxIcon checked={allSelected} onChange={handleToggleAll} />
-        <span className="ml-2 font-roboto text-title1 font-bold">Ingredientes</span>
+        <span className="ml-2 font-roboto text-title1">Ingredientes</span>
       </div>
       <div className="min-h-[200px]">
         {ingredients.map((ingredient, index) => (
@@ -46,7 +46,7 @@ export default function IngredientList({ ingredients, prices }: IngredientListPr
                 checked={selectedItems[index]}
                 onChange={() => handleToggleItem(index)}
               />
-              <span className="ml-2 font-roboto text-title3 truncate">{ingredient}</span>
+              <span className="ml-2 font-roboto text-label1 truncate">{ingredient}</span>
             </div>
             <span className="font-roboto text-title3">
               {selectedItems[index] && prices[index] !== null ? `$${prices[index]}` : '-'}
