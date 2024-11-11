@@ -10,7 +10,7 @@ interface TopBarProps {
 
 const TopBarComponent: React.FC<TopBarProps> = ({ title, variant }) => {
   return (
-    <div className={`flex justify-between items-center w-[412px] h-[62px] bg-primary-50 px-4`}>
+    <div className={`flex justify-between items-center w-[full] h-[62px] bg-primary-50 px-4`}>
       {variant === 'variant1' && <ProfileIcon iconColor="black" size="24" />}
       {variant !== 'variant1' && <ArrowBackIcon iconColor="black" size="24" />}
       <span className={`text-center text-lg font-semibold ${variant === 'variant2' ? 'flex-grow' : ''}`}>{title}</span>
