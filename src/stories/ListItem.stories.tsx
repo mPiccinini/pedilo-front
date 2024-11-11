@@ -1,6 +1,6 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import ListItem from '@/components/ListItem';
-import { ListItemProps } from '@/components/ListItem';
+import ListItemProps  from '@/components/ListItem';
 
 export default {
   title: 'Components/ListItem',
@@ -13,7 +13,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ListItemProps> = (args) => <ListItem {...args} />;
+const Template: StoryFn<typeof ListItemProps> = (args) => <ListItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
