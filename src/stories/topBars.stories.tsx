@@ -6,7 +6,7 @@ const meta: Meta = {
   component: TopBarComponent,
   argTypes: {
     backgroundColor: {
-      options: ['bg-white', 'bg-gray-100', 'bg-blue-200', 'bg-green-300'],
+      options: ['primary-50'],
       control: {
         type: 'select',
       },
