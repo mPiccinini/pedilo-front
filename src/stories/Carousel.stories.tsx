@@ -10,7 +10,7 @@ export default {
 } as Meta;
 
 const Template: Story = () => (
-    <Carousel width="412px">
+    <Carousel widthClass="w-[412px]">
         <GenericRecipeCard
             imageSrc="https://via.placeholder.com/129x144"
             heartVariant="variant1"
@@ -20,7 +20,7 @@ const Template: Story = () => (
             difficultyLevel="Nivel de dificultad"
             actionTexts={["De mar", "Light"]}
         />
-        <IngredientCard name="Tomate" description="Redondo y fresco" />
+        <IngredientCard title="Tomate" description="Redondo y fresco"  imageSrc={""} variant={"variant2"}/>
         <GenericRecipeCard
             imageSrc="https://via.placeholder.com/129x144"
             heartVariant="variant2"
@@ -30,7 +30,7 @@ const Template: Story = () => (
             difficultyLevel="Nivel de dificultad"
             actionTexts={["De mar", "Fácil"]}
         />
-        <IngredientCard name="Lechuga" description="Verde y crujiente" />
+        <IngredientCard title="Tomate" description="Redondo y fresco"  imageSrc={""} variant={"variant2"}/>
     </Carousel>
 );
 
