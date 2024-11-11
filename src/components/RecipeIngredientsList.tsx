@@ -54,7 +54,7 @@ export default function IngredientList({ ingredients, prices }: IngredientListPr
           </div>
         ))}
       </div>
-      <hr className="border-t-2 border-orange-500 my-4" />
+      <hr className="border-t-2 border-primary-500 my-4" />
       <div className="flex justify-between font-bold">
         <span className="font-roboto text-title3">Total:</span>
         <span className="font-roboto text-title3">${total}</span>
