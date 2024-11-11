@@ -12,7 +12,7 @@ export default {
 } as Meta;
 
 const Template: StoryFn = () => (
-    <div>
+    <div className={'w-[412px]'}>
         {/* Primer carrusel con tarjetas de recetas e ingredientes */}
         <Carousel width="412px">
             <GenericRecipeCard
