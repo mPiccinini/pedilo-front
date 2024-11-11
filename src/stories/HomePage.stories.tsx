@@ -15,8 +15,6 @@ type Story = StoryObj<StoryProps>;
 
 export const Default: Story = {
     render: (args) => (
-        <div className="flex items-center justify-center min-h-screen bg-gray-200">
-            <Home{...args} />
-        </div>
+        <Home{...args} />
     ),
 };
