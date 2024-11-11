@@ -12,13 +12,7 @@ const meta: Meta<StoryProps> = {
     component: Button,
     argTypes: {
         variant: {
-            options: ['branch', 'default'],
-            control: {
-                type: 'select',
-            }
-        },
-        icon: {
-            options: ['on', 'off'],
+            options: ['default', 'pressed'],
             control: {
                 type: 'select',
             }
@@ -37,31 +31,11 @@ export const Default: Story = {
     args: {
         buttonText: "Label",
         variant: "default",
-        icon: "off",
     },
-    render: ({ buttonText, icon, ...args }) => {
+    render: ({ buttonText, ...args }) => {
         return (
             <div className={"flex items-center justify-center mt-60"}>
                 <Button {...args}>
-                    {icon === "on" && <p>icon</p>}
-                    {buttonText}
-                </Button>
-            </div>
-        );
-    },
-};
-
-export const Branch: Story = {
-    args: {
-        buttonText: "Ingredientes",
-        variant: "branch",
-        icon: "on",
-    },
-    render: ({ buttonText, icon, ...args }) => {
-        return (
-            <div className={"flex items-center justify-center mt-60"}>
-                <Button {...args}>
-                    {icon === "on" && <p>icon</p>}
                     {buttonText}
                 </Button>
             </div>
