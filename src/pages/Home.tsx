@@ -6,7 +6,6 @@ import BranchButton from "@/components/BranchButton";
 import BasketIcon from "@/icons/BasketIcon";
 import RecipeIcon from "@/icons/RecipeIcon";
 import NavBar from "@/components/navBar/NavBarComponent";
-import CardRecipeCarrousel from "@/components/CardRecipeCarrousel.tsx";
 import CardIngCarrousel from "@/components/CardIngCarrousel.tsx";
 
 const HomePage: React.FC = () => {
@@ -30,7 +29,6 @@ const HomePage: React.FC = () => {
                     </div>
                     <div className="flex flex-col w-full gap-4 mx-5">
                         <p className="font-roboto text-title1">Descubri estas opciones</p>
-                        <CardRecipeCarrousel></CardRecipeCarrousel>
                         <p className="font-roboto text-title1">Ingredientes especiales</p>
                         <CardIngCarrousel imageSrcs={['','','']} variants={['variant1','variant1']} titles={['']} descriptions={['']}></CardIngCarrousel>
                     </div>
