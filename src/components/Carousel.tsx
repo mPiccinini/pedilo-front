@@ -2,7 +2,7 @@ import React from 'react';
 
 interface CarouselProps {
     children: React.ReactNode;
-    width?: string; // permite cambiar el ancho si fuera necesario
+    width?: string;
 }
 
 const Carousel: React.FC<CarouselProps> = ({ children, width = '412px' }) => {
