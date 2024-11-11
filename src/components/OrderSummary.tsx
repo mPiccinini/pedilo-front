@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface OrderSummaryProps {
   items: { name: string; price: number }[];
 }

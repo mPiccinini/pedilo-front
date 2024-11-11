@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import Home from "@/pages/Home"; // Adjust the import path if needed
+import Home from "@/pages/Home.tsx"; // Adjust the import path if needed
 import { Meta, StoryObj } from "@storybook/react";
 
 type StoryProps = ComponentProps<typeof Home>;
