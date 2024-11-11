@@ -1,6 +1,5 @@
 import { HeartIcon } from "@/icons/HeartIcon";
 import { StarIcon } from "@/icons/StarIcon";
-import Tag from "@/components/Tag";
 
 interface GenericRecipeCardProps {
   imageSrc: string;
@@ -22,7 +21,7 @@ function GenericRecipeCard({
   actionTexts,
 }: GenericRecipeCardProps) {
   return (
-    <div className="relative flex w-[320px] h-[140px] bg-primary-50 rounded-lg shadow-lg overflow-hidden"> {/* Ajuste de tamaño de tarjeta */}
+    <div className="relative flex w-[320px] h-[140px] bg-primary-50 rounded-lg shadow-lg overflow-hidden gap-8"> {/* Ajuste de tamaño de tarjeta */}
       <div className="flex flex-col justify-between p-2 w-full">
         <div className="flex flex-col mb-1">
           <h2 className="font-bold text-[14px] text-gray-800 mb-1 truncate">{title}</h2>
@@ -41,21 +40,24 @@ function GenericRecipeCard({
         </div>
         <div className="flex space-x-1">
           {actionTexts.map((text, idx) => (
-            <Tag key={idx} text={text} />
+            <div
+              key={idx}
+              className="bg-[#EBFCFF] text-gray-700 px-2 py-0.5 rounded-full text-xs flex items-center justify-center"
+            >
+              {text}
+            </div>
           ))}
         </div>
       </div>
 
-
-      <div className="relative w-[90px] h-full"> 
-
+      <div className="relative w-[300px] h-full"> {/* Ajusta el tamaño de la imagen */}
         <div className="absolute top-2 right-2 z-10">
           <HeartIcon variant={heartVariant} size="18px" iconColor="#531326" />
         </div>
         <img
           src={imageSrc}
           alt={`${title} image`}
-          className="w-full h-full object-cover rounded-r-lg" 
+          className="w-full h-full object-cover rounded-r-lg" /* Ajusta el tamaño de la imagen */
         />
       </div>
     </div>

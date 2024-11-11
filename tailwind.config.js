@@ -21,10 +21,6 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-      },
       colors: {
         primary: {
           50: '#FFF8F0',

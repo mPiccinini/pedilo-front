@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface DividerProps {
-    color: string;
+    className: string;
     width: string;
 }
 
-const Divider: React.FC<DividerProps> = ({ color, width }) => (
-    <div style={{ width, height: '3px', backgroundColor: color }}></div>
+const Divider: React.FC<DividerProps> = ({ className, width }) => (
+    <div className={`${className}`} style={{ width, height: '1px' }}></div>
 );
 
 export default Divider;
