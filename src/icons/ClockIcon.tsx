@@ -21,3 +21,5 @@ export const ClockIcon = forwardRef<SVGSVGElement, IconInterface>(({ iconColor =
         </svg>
     );
 });
+
+export default ClockIcon;
