@@ -1,14 +1,8 @@
 // Carousel.stories.tsx
 import { Meta, Story } from '@storybook/react';
-import Carousel from '../components/Carousel';
-import GenericRecipeCard from '../components/GenericRecipeCard';
-
-const IngredientCard = ({ name }: { name: string }) => (
-    <div style={{ padding: '20px', backgroundColor: '#FFEFD5', borderRadius: '8px', textAlign: 'center' }}>
-        <h3>{name}</h3>
-        <p>Some ingredient details...</p>
-    </div>
-);
+import Carousel from '@/components/Carousel';
+import GenericRecipeCard from '@/components/GenericRecipeCard';
+import IngredientCard from '@/components/CardIngredients';
 
 export default {
     title: 'Components/Carousel',
@@ -26,7 +20,7 @@ const Template: Story = () => (
             difficultyLevel="Nivel de dificultad"
             actionTexts={["De mar", "Light"]}
         />
-        <IngredientCard name="Tomate" />
+        <IngredientCard name="Tomate" description="Redondo y fresco" />
         <GenericRecipeCard
             imageSrc="https://via.placeholder.com/129x144"
             heartVariant="variant2"
@@ -36,7 +30,7 @@ const Template: Story = () => (
             difficultyLevel="Nivel de dificultad"
             actionTexts={["De mar", "Fácil"]}
         />
-        <IngredientCard name="Lechuga" />
+        <IngredientCard name="Lechuga" description="Verde y crujiente" />
     </Carousel>
 );
 

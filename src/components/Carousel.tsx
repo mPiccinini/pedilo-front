@@ -1,3 +1,4 @@
+// Carousel.tsx
 import React from 'react';
 
 interface CarouselProps {
@@ -10,17 +11,17 @@ const Carousel: React.FC<CarouselProps> = ({ children, width = '412px' }) => {
         <div
             style={{
                 width,
-                overflowX: 'scroll',
-                whiteSpace: 'nowrap',
-                scrollbarWidth: 'none',
+                overflowX: 'auto',
+                display: 'flex',
+                gap: '16px',
+                padding: '10px 0',
+                scrollbarWidth: 'none', // Oculta la barra en Firefox
             }}
             className="hide-scrollbar"
         >
-            <div style={{ display: 'inline-flex', gap: '16px' }}>
-                {React.Children.map(children, (child) => (
-                    <div style={{ flex: '0 0 auto' }}>{child}</div>
-                ))}
-            </div>
+            {React.Children.map(children, (child) => (
+                <div style={{ flex: '0 0 auto' }}>{child}</div>
+            ))}
         </div>
     );
 };
