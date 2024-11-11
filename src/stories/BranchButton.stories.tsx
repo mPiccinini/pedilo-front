@@ -1,22 +1,29 @@
 import {ComponentProps} from "react";
-import Button from "@/components/Button.tsx";
+import BranchButton from "@/components/BranchButton.tsx";
 import {Meta, StoryObj} from "@storybook/react";
 import {fn} from "@storybook/test";
+import BasketIcon from "@/icons/BasketIcon.tsx";
 
-type StoryProps = ComponentProps<typeof Button> & {
+type StoryProps = ComponentProps<typeof BranchButton> & {
     buttonText: string;
     icon: string;
 };
 
 const meta: Meta<StoryProps> = {
-    component: Button,
+    component: BranchButton,
     argTypes: {
+        icon: {
+            options: ['on', 'off'],
+            control: {
+                type: 'select',
+            }
+        },
         variant: {
             options: ['default', 'pressed'],
             control: {
                 type: 'select',
             }
-        },
+        }
     },
     args: {
         onClick: fn(),
@@ -29,15 +36,17 @@ type Story = StoryObj<StoryProps>;
 
 export const Default: Story = {
     args: {
-        buttonText: "Label",
+        buttonText: "Ingredientes",
+        icon: "on",
         variant: "default",
     },
-    render: ({ buttonText, ...args }) => {
+    render: ({ buttonText, icon, ...args }) => {
         return (
             <div className={"flex items-center justify-center mt-60"}>
-                <Button {...args}>
+                <BranchButton {...args}>
+                    {icon === "on" && <BasketIcon iconColor={'black'} size={'24px'}></BasketIcon>}
                     {buttonText}
-                </Button>
+                </BranchButton>
             </div>
         );
     },

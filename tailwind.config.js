@@ -4,18 +4,26 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'headline1': ['2.25rem', { lineHeight: '2.5rem', fontWeight: '700' }], // Customize as needed
-        'headline2': ['2rem', { lineHeight: '2.25rem', fontWeight: '600' }],
-        'headline3': ['1.75rem', { lineHeight: '2rem', fontWeight: '500' }],
-        'title1': ['1.5rem', { lineHeight: '1.75rem', fontWeight: '700' }],
-        'title2': ['1.25rem', { lineHeight: '1.5rem', fontWeight: '600' }],
-        'title3': ['1.125rem', { lineHeight: '1.25rem', fontWeight: '500' }],
-        'label1': ['1rem', { lineHeight: '1.25rem', fontWeight: '700' }],
-        'label2': ['0.875rem', { lineHeight: '1rem', fontWeight: '600' }],
-        'label3': ['0.75rem', { lineHeight: '1rem', fontWeight: '500' }],
-        'body1': ['1rem', { lineHeight: '1.5rem', fontWeight: '400' }],
-        'body2': ['0.875rem', { lineHeight: '1.25rem', fontWeight: '400' }],
-        'body3': ['0.75rem', { lineHeight: '1rem', fontWeight: '400' }],
+        'headline1': ['2.25rem', { lineHeight: '2.5rem'}],
+        'headline2': ['2rem', { lineHeight: '2.25rem'}],
+        'headline3': ['1.75rem', { lineHeight: '2rem'}],
+        'title1': ['1.5rem', { lineHeight: '1.75rem'}],
+        'title2': ['1.25rem', { lineHeight: '1.5rem'}],
+        'title3': ['1.125rem', { lineHeight: '1.25rem'}],
+        'label1': ['1rem', { lineHeight: '1.25rem'}],
+        'label2': ['0.875rem', { lineHeight: '1rem'}],
+        'label3': ['0.75rem', { lineHeight: '1rem'}],
+        'body1': ['1rem', { lineHeight: '1.5rem'}],
+        'body2': ['0.875rem', { lineHeight: '1.25rem'}],
+        'body3': ['0.75rem', { lineHeight: '1rem'}],
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         primary: {
@@ -61,9 +69,8 @@ export default {
         green: '#24C024',
         brightYellow: '#FFE100',
         red: '#D81A13',
-      }
+      },
     },
   },
   plugins: [],
 }
-

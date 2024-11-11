@@ -1,29 +1,28 @@
-import { ButtonHTMLAttributes, forwardRef } from 'react';
-import { cn } from "../utils/UtilFunctions.ts";
-import BasketIcon from '../icons/BasketIcon';
-import RecipeIcon from '../icons/RecipeIcon';
+import {ButtonHTMLAttributes, forwardRef } from 'react';
+import { cva, VariantProps } from "class-variance-authority";
+import {cn} from "../utils/UtilFunctions.ts";
 
-interface BranchButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
-  icon?: 'basket' | 'book'; 
-}
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> ,VariantProps<typeof buttonVariants> {}
 
-const BranchButton = forwardRef<HTMLButtonElement, BranchButtonProps>(({ label, icon = 'basket', className, ...props }, ref) => {
-  return (
-    <button
-      ref={ref}
-      className={cn("w-[190px] h-[89px] bg-[#fff7ef] rounded-2xl shadow flex flex-col justify-center items-center", className)}
-      {...props}
-    >
-      <div className="flex items-center gap-3">
-        {icon === 'basket' && <BasketIcon variant="variant1" iconColor="defaultColor" size="defaultSize" />}
-        {icon === 'book' && <RecipeIcon variant="variant1" iconColor="defaultColor" size="defaultSize" />}
-        <span className="text-black text-sm font-medium font-['Roboto']">
-          {label}
-        </span>
-      </div>
-    </button>
-  );
-});
+const buttonVariants = cva(
+    "flex flex-row items-center justify-center rounded-2xl text-title3 gap-[12px] ",
+    {
+        variants: {
+            variant: {
+                default: "bg-primary-50 shadow-xl text-label2 w-auto min-w-[163px] h-[71px] p-[16px]",
+                pressed: "bg-tertiary-50 text-label2 w-auto min-w-[163px] h-[71px] p-[16px]"
+            }
+        },
+        defaultVariants: {
+            variant: "default"
+        }
+    }
+);
 
-export default BranchButton;
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({className, variant, ...props }, ref) => {
+    return (
+        <button ref={ref} className={cn(buttonVariants({className, variant}))} {...props}></button>
+    );
+})
+
+export default Button;
