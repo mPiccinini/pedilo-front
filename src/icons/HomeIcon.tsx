@@ -1,10 +1,11 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';
-
+//prueba d icono
 export const HomeIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
     return (
         <svg
             ref={ref}
+
             width={size}
             height={size}
             viewBox="0 0 24 24"
@@ -32,3 +33,5 @@ export const HomeIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'v
         </svg>
     );
 });
+
+export default HomeIcon;

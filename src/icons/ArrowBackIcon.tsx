@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';
 
 export const ArrowBackIcon = forwardRef<SVGSVGElement, IconInterface>(({ iconColor = "currentColor", size = "24px" }, ref) => {
@@ -18,3 +18,5 @@ export const ArrowBackIcon = forwardRef<SVGSVGElement, IconInterface>(({ iconCol
         </svg>
     );
 });
+
+export default ArrowBackIcon;

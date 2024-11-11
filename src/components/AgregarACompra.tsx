@@ -1,4 +1,3 @@
-import React from "react";
 import { CircularAddIcon } from "@/icons/CircularAddIcon";
 
 interface AgregarACompraProps {
