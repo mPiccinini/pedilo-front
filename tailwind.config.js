@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'headline1': ['2.25rem', { lineHeight: '2.5rem', fontWeight: '700' }], // Customize as needed
+        'headline1': ['2.25rem', { lineHeight: '2.5rem', fontWeight: '500' }],
         'headline2': ['2rem', { lineHeight: '2.25rem', fontWeight: '600' }],
         'headline3': ['1.75rem', { lineHeight: '2rem', fontWeight: '500' }],
         'title1': ['1.5rem', { lineHeight: '1.75rem', fontWeight: '700' }],
@@ -16,6 +16,10 @@ export default {
         'body1': ['1rem', { lineHeight: '1.5rem', fontWeight: '400' }],
         'body2': ['0.875rem', { lineHeight: '1.25rem', fontWeight: '400' }],
         'body3': ['0.75rem', { lineHeight: '1rem', fontWeight: '400' }],
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         primary: {
@@ -61,9 +65,8 @@ export default {
         green: '#24C024',
         brightYellow: '#FFE100',
         red: '#D81A13',
-      }
+      },
     },
   },
   plugins: [],
 }
-
