@@ -16,7 +16,7 @@ const NavBar: React.FC<NavBarProps> = ({ variant }) => {
     const highlightColor = 'text-orange-500';
 
     return (
-        <nav className={`flex justify-around items-center w-[409px] h-[90px] bg-primary-50`}>
+        <nav className={`flex justify-around items-center w-full h-[90px] bg-primary-50`}>
             <NavBarItem
                 icon={<HomeIcon iconColor={variant === 'variant1' ? 'orange' : 'black'} size="24" />}
                 label="Inicio"

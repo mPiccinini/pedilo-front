@@ -12,6 +12,7 @@ import { ArrowBackIcon } from "@/icons/ArrowBackIcon";
 import { ClockIcon } from "@/icons/ClockIcon";
 import { CircularAddIcon } from "@/icons/CircularAddIcon";
 import {StarIcon} from "@/icons/StarIcon";
+import SearchIcon from "@/icons/SearchIcon";
 
 
 type StoryProps = {
@@ -401,6 +402,21 @@ export const StarIconVariant2: Story = {
                 iconColor={args.iconColor}
                 size={args.size}
                 variant={args.variant}
+            />
+        );
+    },
+};
+
+export const SearchIconStory: Story = {
+    args: {
+        iconColor: '#1e1e1e',
+        size: '16px',
+    },
+    render: (args) => {
+        return (
+            <SearchIcon
+                iconColor={args.iconColor}
+                size={args.size}
             />
         );
     },
