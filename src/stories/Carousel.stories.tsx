@@ -4,6 +4,7 @@ import Carousel from '@/components/carrousel/Carousel';
 import GenericRecipeCard from '@/components/GenericRecipeCard';
 import IngredientCard from '@/components/CardIngredients';
 import FilterChip from '@/components/FilterChip';
+import TagFoodOrigin from "@/components/TagFoodOrigin.tsx";
 
 export default {
     title: 'Components/Carousel',
@@ -11,7 +12,7 @@ export default {
 } as Meta;
 
 const Template: StoryFn = () => (
-    <div>
+    <div className={'w-[412px]'}>
         {/* Primer carrusel con tarjetas de recetas e ingredientes */}
         <Carousel width="412px">
             <GenericRecipeCard
@@ -53,6 +54,17 @@ const Template: StoryFn = () => (
             <FilterChip label="Frutas" variant="default" />
             <FilterChip label="Proteínas" variant="default" />
             <FilterChip label="Carbohidratos" variant="default" />
+            <FilterChip label="Todo" variant="default" />
+            <FilterChip label="Vegetales" variant="selected" />
+            <FilterChip label="Frutas" variant="default" />
+            <FilterChip label="Proteínas" variant="default" />
+            <FilterChip label="Carbohidratos" variant="default" />
+        </Carousel>
+
+        <Carousel width="412px">
+            <TagFoodOrigin text="Italiana" imageSrc="images/comidaitaliana.png" />
+            <TagFoodOrigin text="Mexicana" imageSrc="images/comidaindia.png" />
+            <TagFoodOrigin text="China" imageSrc="images/comidaperuana.png" />
         </Carousel>
     </div>
 );
