@@ -14,8 +14,8 @@ const SearchResult: React.FC<{ title: string; subtitle: string }> = ({ title, su
           <span className="text-label3 text-[#1d1b20]">{subtitle}</span>
         </div>
       </div>
-      <Divider /> {/* Divider permanece intacto aquí */}
-    </div>
+      <Divider width="360px" className={"bg-primary-700"} />
+    </div>  
   );
 };
 
