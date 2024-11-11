@@ -8,16 +8,15 @@ import DollarIcon from "@/icons/DollarIcon";
 import BagIcon from "@/icons/BagIcon";
 
 interface NavBarProps {
-    backgroundColor: string;
     variant: 'variant1' | 'variant2' | 'variant3' | 'variant4' | 'variant5';
 }
 
-const NavBar: React.FC<NavBarProps> = ({ backgroundColor, variant }) => {
+const NavBar: React.FC<NavBarProps> = ({ variant }) => {
     const defaultColor = 'black';
     const highlightColor = 'text-orange-500';
 
     return (
-        <nav className={`flex justify-around items-center w-[409px] h-[90px] ${backgroundColor}`}>
+        <nav className={`flex justify-around items-center w-[409px] h-[90px] bg-primary-50`}>
             <NavBarItem
                 icon={<HomeIcon iconColor={variant === 'variant1' ? 'orange' : 'black'} size="24" />}
                 label="Inicio"
