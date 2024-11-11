@@ -4,7 +4,7 @@ import { IconInterface } from './IconInterface';
 export const HeartIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
     
     const colorMap = {
-        variant1: '#e6879a',
+        variant1: '#f1d4da',
         variant2: '#ac2f48',
     };
 
