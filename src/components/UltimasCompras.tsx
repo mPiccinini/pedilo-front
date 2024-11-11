@@ -1,5 +1,3 @@
-import React from "react";
-
 interface UltimasComprasProps {
   imageSrc: string;
   title: string;

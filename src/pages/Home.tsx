@@ -19,12 +19,12 @@ const HomePage: React.FC = () => {
                 <div className="flex flex-col gap-10 flex-grow w-full">
                     <div className="relative flex flex-col items-center justify-center w-full">
                         <ImageComponent
-                            src={'./public/images/sushi.png'}
+                            src={'/images/sushi.png'}
                             alt={'image'}
                             variant={'default'}
                             size={'large'}
                         />
-                        <div className="absolute top-4">
+                        <div className="absolute top-4 w-[300px]">
                             <SearchBar variant={'rounded'}/>
                         </div>
                     </div>
@@ -44,19 +44,19 @@ const HomePage: React.FC = () => {
                         <div className={'flex flex-col gap-4'}>
                             <p className="font-roboto w-full text-title1">Descubri estas opciones</p>
                             <Carousel>
-                                <GenericRecipeCard imageSrc={'public/images/escalopedepescado.png'} heartVariant={'variant2'} starVariants={['variant1', 'variant1', 'variant1']} title={'Escalopes de pescado'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['De mar', 'Light']}></GenericRecipeCard>
-                                <GenericRecipeCard imageSrc={'public/images/pejerreyalaplancha.png'} heartVariant={'variant1'} starVariants={['variant1', 'variant1', 'variant2', 'variant2', 'variant2']} title={'Pejerrey a la plancha'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['De mar', 'Pescado']}></GenericRecipeCard>
-                                <GenericRecipeCard imageSrc={'public/images/ensaladadesalmon.png'} heartVariant={'variant1'} starVariants={['variant1', 'variant1', 'variant2', 'variant2', 'variant2']} title={'Pejerrey a la plancha'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['Saludable', 'Pescado']}></GenericRecipeCard>
+                                <GenericRecipeCard imageSrc={'images/escalopedepescado.png'} heartVariant={'variant2'} starVariants={['variant1', 'variant1', 'variant1']} title={'Escalopes de pescado'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['De mar', 'Light']}></GenericRecipeCard>
+                                <GenericRecipeCard imageSrc={'images/pejerreyalaplancha.png'} heartVariant={'variant1'} starVariants={['variant1', 'variant1', 'variant2', 'variant2', 'variant2']} title={'Pejerrey a la plancha'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['De mar', 'Pescado']}></GenericRecipeCard>
+                                <GenericRecipeCard imageSrc={'images/ensaladadesalmon.png'} heartVariant={'variant1'} starVariants={['variant1', 'variant1', 'variant2', 'variant2', 'variant2']} title={'Pejerrey a la plancha'} prepTime={'30m'} difficultyLevel={'Nivel de dificultad'} actionTexts={['Saludable', 'Pescado']}></GenericRecipeCard>
                             </Carousel>
                         </div>
                         <div className={'flex flex-col gap-4'}>
                             <p className="font-roboto text-title1">Ingredientes especiales</p>
                             <Carousel>
-                                <CardIngredients imageSrc={'public/images/hongoshiitake.png'} variant={'variant2'} title={"Hongo Shitake"} description={'Hongo'}></CardIngredients>
-                                <CardIngredients imageSrc={'public/images/curcuma.png'} variant={'variant1'} title={"Cúrcuma"} description={'Especia'}></CardIngredients>
-                                <CardIngredients imageSrc={'public/images/achiote.png'} variant={'variant1'} title={"Achiote"} description={'Especia'}></CardIngredients>
-                                <CardIngredients imageSrc={'public/images/sesamonegro.png'} variant={'variant1'} title={"Sésamo negro"} description={'Semilla'}></CardIngredients>
-                                <CardIngredients imageSrc={'public/images/miso.png'} variant={'variant2'} title={"Miso"} description={'Fermento'}></CardIngredients>
+                                <CardIngredients imageSrc={'images/hongoshiitake.png'} variant={'variant2'} title={"Hongo Shitake"} description={'Hongo'}></CardIngredients>
+                                <CardIngredients imageSrc={'images/curcuma.png'} variant={'variant1'} title={"Cúrcuma"} description={'Especia'}></CardIngredients>
+                                <CardIngredients imageSrc={'images/achiote.png'} variant={'variant1'} title={"Achiote"} description={'Especia'}></CardIngredients>
+                                <CardIngredients imageSrc={'images/sesamonegro.png'} variant={'variant1'} title={"Sésamo negro"} description={'Semilla'}></CardIngredients>
+                                <CardIngredients imageSrc={'images/miso.png'} variant={'variant2'} title={"Miso"} description={'Fermento'}></CardIngredients>
                             </Carousel>
                         </div>
                     </div>

@@ -9,12 +9,12 @@ interface SearchBarProps {
 const SearchBar: FC<SearchBarProps> = ({ placeholder = "Buscar", variant = "rounded" }) => {
   const containerClasses = 
     variant === "rounded"
-      ? "w-[350px] h-12 px-4 py-3 bg-white rounded-full border border-[#531226] justify-between items-center gap-2 flex"
+      ? "w-full h-12 px-4 py-3 bg-white rounded-full border border-[#531226] justify-between items-center gap-2 flex"
       : variant === "default"
       ? "w-[350px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"
       : "w-[287px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"; 
   return (
-    <div className="h-12 justify-start items-start inline-flex">
+    <div className="h-12 justify-start items-start inline-flex w-full">
       <div className={containerClasses}>
         <input
           type="text"

@@ -12,7 +12,7 @@ const meta: Meta<StoryProps> = {
     component: Button,
     argTypes: {
         variant: {
-            options: ['default', 'pressed'],
+            options: ['default', 'pressed', 'secondary', 'secondaryPressed'],
             control: {
                 type: 'select',
             }
