@@ -15,7 +15,7 @@ export default function RecipeInfo({
     const [selectedStep, setSelectedStep] = useState(0);
 
     return (
-        <div className="max-w-sm bg-white rounded-[20px] shadow-lg text-center overflow-hidden h-[400px] flex flex-col justify-between">
+        <div className="max-w-sm bg-white rounded-[20px] shadow-custom-light text-center overflow-hidden h-[375px] flex flex-col justify-between">
             <img
                 src={stepsImages[selectedStep]}
                 alt={`Step ${selectedStep + 1}`}

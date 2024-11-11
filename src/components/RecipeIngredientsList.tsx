@@ -33,7 +33,7 @@ export default function IngredientList({ ingredients, prices }: IngredientListPr
   }, 0);
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-lg w-[350px]" >
+    <div className="p-4 bg-white rounded-lg shadow-custom-light w-[350px]" >
       <div className="flex items-center mb-4">
         <CheckBoxIcon checked={allSelected} onChange={handleToggleAll} />
         <span className="ml-2 font-roboto text-title1 font-bold">Ingredientes</span>

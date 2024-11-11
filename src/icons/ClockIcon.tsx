@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import  { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';
 
 export const ClockIcon = forwardRef<SVGSVGElement, IconInterface>(({ iconColor = "currentColor", size = "24px" }, ref) => {

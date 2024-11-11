@@ -3,15 +3,15 @@ import React from 'react';
 
 interface CarouselProps {
     children: React.ReactNode;
-    widthClass?: string;
+    width?: string;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ children, widthClass = 'w-[412px]' }) => {
+const Carousel: React.FC<CarouselProps> = ({ children, width= 'w-full' }) => {
     return (
         <div
-            className={`overflow-x-auto flex gap-4 py-2 pl-4 pb-4 hide-scrollbar ${widthClass}`}
+            className={`overflow-x-auto flex gap-4 py-4 pl-2 pb-4 hide-scrollbar ${width}`}
             style={{
-                scrollbarWidth: 'none',
+                scrollbarWidth: 'none', // Hide scrollbar in Firefox
             }}
         >
             {React.Children.map(children, (child) => (

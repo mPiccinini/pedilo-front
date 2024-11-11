@@ -7,14 +7,12 @@ interface SearchBarProps {
 }
 
 const SearchBar: FC<SearchBarProps> = ({ placeholder = "Buscar", variant = "rounded" }) => {
-  // Clases condicionales según la variante
   const containerClasses = 
     variant === "rounded"
       ? "w-[350px] h-12 px-4 py-3 bg-white rounded-full border border-[#531226] justify-between items-center gap-2 flex"
       : variant === "default"
       ? "w-[350px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"
-      : "w-[287px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"; // Para la variante "compact"
-
+      : "w-[287px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"; 
   return (
     <div className="h-12 justify-start items-start inline-flex">
       <div className={containerClasses}>
@@ -30,3 +28,4 @@ const SearchBar: FC<SearchBarProps> = ({ placeholder = "Buscar", variant = "roun
 };
 
 export default SearchBar;
+  
