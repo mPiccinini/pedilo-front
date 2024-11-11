@@ -1,11 +1,11 @@
-import React, { forwardRef } from 'react'; 
+import { forwardRef } from 'react';
 import { IconInterface } from './IconInterface';  
 
 export const HeartIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
     
     const colorMap = {
-        variant1: '#f1d4da', 
-        variant2: '#450c17', 
+        variant1: '#f1d4da',
+        variant2: '#ac2f48',
     };
 
     const heartColor = colorMap[variant] || iconColor;
