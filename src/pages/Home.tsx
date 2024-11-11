@@ -7,7 +7,7 @@ import BasketIcon from "@/icons/BasketIcon";
 import RecipeIcon from "@/icons/RecipeIcon";
 import NavBar from "@/components/navBar/NavBarComponent";
 import ImageComponent from "@/components/imageComponent/ImageComponent.tsx";
-import Carousel from "@/components/carrousel/Carousel.tsx";
+import Carousel from "@/components/carousel/Carousel.tsx";
 import GenericRecipeCard from "@/components/GenericRecipeCard.tsx";
 import CardIngredients from "@/components/CardIngredients.tsx";
 

@@ -1,6 +1,6 @@
 // Carousel.stories.tsx
 import { Meta, StoryFn } from '@storybook/react';
-import Carousel from '@/components/carrousel/Carousel';
+import Carousel from '@/components/carousel/Carousel';
 import GenericRecipeCard from '@/components/GenericRecipeCard';
 import IngredientCard from '@/components/CardIngredients';
 
