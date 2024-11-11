@@ -5,7 +5,7 @@ import RecipeIcon from '../icons/RecipeIcon';
 
 interface BranchButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
-  icon?: 'basket' | 'book'; // 'basket' para Ingredientes, 'book' para Recetas
+  icon?: 'basket' | 'book'; 
 }
 
 const BranchButton = forwardRef<HTMLButtonElement, BranchButtonProps>(({ label, icon = 'basket', className, ...props }, ref) => {
