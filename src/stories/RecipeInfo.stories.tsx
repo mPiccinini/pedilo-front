@@ -1,4 +1,4 @@
-import RecipeInfo from "@/components/RecipeInfo";
+import RecipeInfo from "@/components/recipe-ingredient-cards/RecipeInfo";
 import ScrollDots from "@/icons/ScrollDots";
 import { Meta, StoryObj } from "@storybook/react";
 

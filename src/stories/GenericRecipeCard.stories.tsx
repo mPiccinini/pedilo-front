@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import GenericRecipeCard from "@/components/GenericRecipeCard"; 
+import GenericRecipeCard from "@/components/recipe-ingredient-cards/GenericRecipeCard"; 
 
 const meta: Meta = {
   title: "Components/GenericRecipeCard",

@@ -1,6 +1,6 @@
 // FilterChip.stories.tsx
 import { ComponentProps } from "react";
-import FilterChip from "@/components/FilterChip.tsx";
+import FilterChip from "@/components/search-&-filter/FilterChip";
 import { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 

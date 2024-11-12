@@ -1,6 +1,6 @@
 // UserInfo.stories.tsx
 import { Meta, StoryObj } from "@storybook/react";
-import UserInfo from "@/components/UserInfo";
+import UserInfo from "@/components/user-related/UserInfo";
 
 const meta: Meta<typeof UserInfo> = {
   title: "Components/UserInfo",
