@@ -26,27 +26,8 @@ type Story = StoryObj<typeof TopBarComponent>;
 
 export const Variant1: Story = {
   args: {
-    backgroundColor: 'bg-white',
     title: 'Title',
     variant: 'variant1',
-  },
-  render: (args) => <TopBarComponent {...args} />,
-};
-
-export const Variant2: Story = {
-  args: {
-    backgroundColor: 'bg-gray-100',
-    title: 'Title',
-    variant: 'variant2',
-  },
-  render: (args) => <TopBarComponent {...args} />,
-};
-
-export const Variant3: Story = {
-  args: {
-    backgroundColor: 'bg-blue-200',
-    title: 'Title',
-    variant: 'variant3',
   },
   render: (args) => <TopBarComponent {...args} />,
 };

@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import AgregarACompra from "@/components/AgregarACompra"; 
+import AgregarACompra from "@/components/AgregarACompra";
 
 const meta: Meta = {
   title: "Components/AgregarACompra",
@@ -32,3 +32,4 @@ export const Default = {
     description: "Fresco",
   },
 };
+

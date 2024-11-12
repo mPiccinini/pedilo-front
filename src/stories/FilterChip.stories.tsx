@@ -2,7 +2,6 @@
 import { ComponentProps } from "react";
 import FilterChip from "@/components/FilterChip.tsx";
 import { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
 
 type StoryProps = ComponentProps<typeof FilterChip>;
 
@@ -17,7 +16,7 @@ const meta: Meta<StoryProps> = {
     },
   },
   args: {
-    onClick: fn(),
+    label: "Filtro",
     variant: "default",
   },
 };
@@ -31,11 +30,11 @@ export const Default: Story = {
     label: "Filtro",
     variant: "default",
   },
-  render: ({ label, ...args }) => {
+  render: (args) => {
     return (
-      <div className="flex items-center justify-center mt-20">
-        <FilterChip {...args} label={label} />
-      </div>
+        <div className="flex items-center justify-center mt-20">
+          <FilterChip {...args} />
+        </div>
     );
   },
 };
