@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
-import UltimasCompras from "@/components/UltimasCompras";
-import UltimasComprasProps from "@/components/UltimasCompras";
+import UltimasCompras from "@/components/recipe-ingredient-cards/UltimasCompras";
+import UltimasComprasProps from "@/components/recipe-ingredient-cards/UltimasCompras";
 
 export default {
   title: "Components/UltimasCompras",
