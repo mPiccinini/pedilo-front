@@ -1,7 +1,10 @@
-import { Meta } from "@storybook/react";
-import AgregarACompra from "@/components/recipe-ingredient-cards/AgregarACompra"; 
+import { Meta, StoryObj} from "@storybook/react";
+import AgregarACompra from "@/components/recipe-ingredient-cards/AgregarACompra";
+import {ComponentProps} from "react";
 
-const meta: Meta = {
+type StoryProps = ComponentProps<typeof AgregarACompra>;
+
+const meta: Meta<StoryProps> = {
   title: "Components/AgregarACompra",
   component: AgregarACompra,
   argTypes: {
@@ -23,9 +26,11 @@ const meta: Meta = {
   },
 };
 
+type Story = StoryObj<StoryProps>;
+
 export default meta;
 
-export const Default = {
+export const Default: Story = {
   args: {
     imageSrc: "https://via.placeholder.com/150",
     title: "Tomate",
