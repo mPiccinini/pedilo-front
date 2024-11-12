@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
-import GenericRecipeCard from "@/components/GenericRecipeCard"; 
+import GenericRecipeCard from "@/components/GenericRecipeCard";
 
-const meta: Meta = {
+const meta: Meta<typeof GenericRecipeCard> = {
   title: "Components/GenericRecipeCard",
   component: GenericRecipeCard,
   argTypes: {
@@ -46,14 +46,16 @@ const meta: Meta = {
 
 export default meta;
 
-export const Default: StoryFn = {
-  args: {
-    imageSrc: "https://via.placeholder.com/129x144",
-    heartVariant: "variant1",
-    starVariants: ["variant1", "variant1", "variant1", "variant1", "variant1"],
-    title: "Tarta de Manzana",
-    prepTime: "30",
-    difficultyLevel: "Nivel de dificultad",
-    actionTexts: ["Ver receta", "Añadir a favoritos"],
-  },
+export const Default: StoryFn<typeof GenericRecipeCard> = (args) => (
+  <GenericRecipeCard {...args} />
+);
+
+Default.args = {
+  imageSrc: "https://via.placeholder.com/129x144",
+  heartVariant: "variant1",
+  starVariants: ["variant1", "variant1", "variant1", "variant1", "variant1"],
+  title: "Tarta de Manzana",
+  prepTime: "30 minutos",
+  difficultyLevel: "Fácil",
+  actionTexts: ["Ver receta", "Añadir a favoritos"],
 };

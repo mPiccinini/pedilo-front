@@ -1,5 +1,4 @@
-// TagFoodOrigin.stories.tsx
-import {Meta, Story} from '@storybook/react';
+import {Meta, StoryFn} from '@storybook/react';
 import TagFoodOrigin, { TagFoodOriginProps } from '@/components/TagFoodOrigin';
 
 export default {
@@ -7,7 +6,7 @@ export default {
     component: TagFoodOrigin,
 } as Meta;
 
-const Template: Story<TagFoodOriginProps> = (args) => <TagFoodOrigin {...args} />;
+const Template: StoryFn<TagFoodOriginProps> = (args) => <TagFoodOrigin {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

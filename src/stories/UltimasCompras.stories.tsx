@@ -1,5 +1,6 @@
-import { Meta, Story } from "@storybook/react";
-import UltimasCompras, { UltimasComprasProps } from "@/components/UltimasCompras";
+import { Meta, StoryFn } from "@storybook/react";
+import UltimasCompras from "@/components/UltimasCompras";
+import UltimasComprasProps from "@/components/UltimasCompras";
 
 export default {
   title: "Components/UltimasCompras",
@@ -11,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<UltimasComprasProps> = (args) => <UltimasCompras {...args} />;
+const Template: StoryFn<typeof UltimasComprasProps> = (args) => <UltimasCompras {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

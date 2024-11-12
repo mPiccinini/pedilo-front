@@ -2,8 +2,8 @@ import { Meta, StoryObj } from "@storybook/react";
 import SearchBar from "@/components/SearchBar";
 
 type StoryProps = {
-  placeholder: string;
-  variant: "rounded" | "default" | "compact"; // Agregamos la opción "compact"
+  placeholder: string | undefined;
+  variant: "rounded" | "default" | "compact";
 };
 
 const meta: Meta<StoryProps> = {
@@ -19,7 +19,7 @@ const meta: Meta<StoryProps> = {
     variant: {
       control: {
         type: 'select',
-        options: ["rounded", "default", "compact"], // Incluimos "compact" en las opciones
+        options: ["rounded", "default", "compact"], 
       },
       defaultValue: "rounded",
     },

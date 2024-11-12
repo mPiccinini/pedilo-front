@@ -18,8 +18,8 @@ import SearchIcon from "@/icons/SearchIcon";
 type StoryProps = {
     iconColor: string;
     size: string;
-    variant: 'variant1' | 'variant2'; 
-} & ComponentProps<typeof AddIcon & typeof DollarIcon>;
+    variant: 'variant1' | 'variant2' ; 
+} & ComponentProps<typeof AddIcon & typeof DollarIcon >;
 
 const meta: Meta<StoryProps> = {
     component: AddIcon, 
@@ -220,9 +220,9 @@ export const RecipeIconVariant2: Story = {
 
 export const RecipeIconVariant3: Story = {
     args: {
-        iconColor: 'blue',
+        iconColor: 'orange',
         size: '32px',
-        variant: 'variant3',
+        variant: 'variant1',
     },
     render: (args) => {
         return (
@@ -271,9 +271,9 @@ export const BasketIconVariant2: Story = {
 
 export const BasketIconVariant3: Story = {  
     args: {
-        iconColor: 'blue',
+        iconColor: 'orange',
         size: '32px',
-        variant: 'variant3',
+        variant: 'variant1',
     },
     render: (args) => {
         return (
@@ -333,7 +333,6 @@ export const ArrowBackIconVariant1: Story = {
             <ArrowBackIcon
                 iconColor={args.iconColor}
                 size={args.size}
-                variant={args.variant}
             />
         );
     },
@@ -350,7 +349,6 @@ export const ClockIconVariant1: Story = {
             <ClockIcon
                 iconColor={args.iconColor}
                 size={args.size}
-                variant={args.variant}
             />
         );
     },
@@ -367,7 +365,6 @@ export const CircularAddIconVariant1: Story = {
             <CircularAddIcon
                 iconColor={args.iconColor}
                 size={args.size}
-                variant={args.variant}
             />
         );
     },

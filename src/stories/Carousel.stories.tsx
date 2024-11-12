@@ -1,4 +1,3 @@
-// Carousel.stories.tsx
 import { Meta, StoryFn } from '@storybook/react';
 import Carousel from '@/components/carousel/Carousel';
 import GenericRecipeCard from '@/components/GenericRecipeCard';
@@ -13,7 +12,6 @@ export default {
 
 const Template: StoryFn = () => (
     <div className={'w-[412px]'}>
-        {/* Primer carrusel con tarjetas de recetas e ingredientes */}
         <Carousel width="412px">
             <GenericRecipeCard
                 imageSrc="https://via.placeholder.com/129x144"
