@@ -51,13 +51,13 @@ const HomePage: React.FC = () => {
                     <div className="flex flex-row justify-center items-center gap-9">
                         <Tag variant="variant2" text="Italiana"/>
                         <Tag variant="variant2" text="Pasta"/>
-                        <Tag variant="variant2" text="Facil"/>
+                        <Tag variant="variant2" text="Fácil"/>
                     </div>
 
                     {/* Ingredients and Add to Cart */}
                     <div className="flex flex-col justify-center items-center gap-10">
                         <RecipeIngredientsList
-                            ingredients={['Sémola de trigo', 'leche', 'Huevo', 'Manteca', 'Sal', 'Nuez moscada']}
+                            ingredients={['Sémola de trigo', 'Leche', 'Huevo', 'Manteca', 'Sal', 'Nuez moscada']}
                             prices={[1000, 200, 2200, 300, 156, 600]}
                         />
                         <Button>Añadir al carrito</Button>

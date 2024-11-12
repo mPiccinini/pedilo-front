@@ -9,7 +9,7 @@ interface SearchBarProps {
 const SearchBar: FC<SearchBarProps> = ({ placeholder = "Buscar", variant = "rounded" }) => {
   const containerClasses = 
     variant === "rounded"
-      ? "w-full h-12 px-4 py-3 bg-white rounded-full border border-[#531226] justify-between items-center gap-2 flex"
+      ? "w-full max-w-[400px] h-12 px-4 py-3 bg-white rounded-full border border-[#531226] justify-between items-center gap-2 flex"
       : variant === "default"
       ? "w-[350px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"
       : "w-[287px] h-12 px-4 py-3 bg-white rounded border border-[#531226] justify-between items-center gap-2 flex"; 

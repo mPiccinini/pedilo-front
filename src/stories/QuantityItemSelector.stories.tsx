@@ -35,21 +35,3 @@ export const Default: Story = {
   },
   render: (args) => <ItemQuantitySelector {...args} />,
 };
-
-export const SmallStep: Story = {
-  args: {
-    initialGrams: 50,
-    pricePerGram: 50,
-    stepOfGrams: 10,
-  },
-  render: (args) => <ItemQuantitySelector {...args} />,
-};
-
-export const LargeStep: Story = {
-  args: {
-    initialGrams: 200,
-    pricePerGram: 75,
-    stepOfGrams: 200,
-  },
-  render: (args) => <ItemQuantitySelector {...args} />,
-};

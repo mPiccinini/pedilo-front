@@ -1,6 +1,5 @@
 import RecipeIngredientsList from "@/components/cart-related/RecipeIngredientsList";
-import CheckBoxIcon from "@/icons/CheckBoxIcon";
-import { Meta, StoryObj } from "@storybook/react";
+import { StoryObj } from "@storybook/react";
 
 const meta = {
     title: 'Components/RecipeIngredientsList',
@@ -25,8 +24,8 @@ type Story = StoryObj<typeof RecipeIngredientsList>;
 
 export const Default : Story = {
     args: {
-        ingredients: ['Tomate', 'Lechuga', 'Cebolla'],
-        prices: [100, 200, 300],
+        ingredients: ['Tomate', 'Lechuga', 'Cebolla', 'Leche', 'Huevos'],
+        prices: [100, 200, 300, 50, 86],
     },
     render: (args) => <RecipeIngredientsList {...args} />,
 };

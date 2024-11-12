@@ -48,25 +48,3 @@ export const Default: Story = {
   },
   render: (args) => <RecipeShowcase {...args} />,
 };
-
-export const MediumSize: Story = {
-  args: {
-    image: "https://via.placeholder.com/150",
-    name: "Tacos al Pastor",
-    time: "30m",
-    size: "medium",
-    favourite: true,
-  },
-  render: (args) => <RecipeShowcase {...args} />,
-};
-
-export const SmallSize: Story = {
-  args: {
-    image: "https://via.placeholder.com/150",
-    name: "Buñuelos de Espinaca",
-    time: "10m",
-    size: "small",
-    favourite: false,
-  },
-  render: (args) => <RecipeShowcase {...args} />,
-};
