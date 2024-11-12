@@ -1,7 +1,9 @@
 import { FC } from "react";
+import { ReactNode } from "react";
+import { ArrowBackIcon } from "../../icons/ArrowBackIcon";
 
 interface KeyProps {
-  label: string;
+  label: ReactNode;
   className?: string;
 }
 
@@ -23,10 +25,12 @@ const SpecialKey: FC<KeyProps> = ({ label, className }) => (
 
 const Keyboard: FC = () => {
   return (
-    <div className="w-[430px] h-[338px] bg-[#fff7ef] rounded-b-xl flex flex-col p-3 gap-3 relative">
+    <div className="w-[430px] h-[300px] bg-[#fff7ef] rounded-b-xl flex flex-col p-2 gap-2 relative">
       {/* Top row with icons */}
       <div className="w-full h-11 flex justify-between items-center px-4">
-        <div className="w-6 h-6 bg-[#ffdbb2] rounded-full flex items-center justify-center">←</div>
+        <div className="w-8 h-8 bg-[#ffdbb2] flex justify-center items-center rounded-md">
+          <ArrowBackIcon iconColor="#000" size="14" />
+        </div>
         <div className="flex gap-4">
           <div className="w-6 h-6 bg-gray-200 rounded-full" />
           <div className="w-6 h-6 bg-gray-200 rounded-full" />
@@ -37,42 +41,41 @@ const Keyboard: FC = () => {
       </div>
 
       {/* Keyboard rows */}
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-2 items-center">
         {/* First row */}
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           {"qwertyuiop".split("").map((key) => (
             <Key key={key} label={key} />
           ))}
         </div>
 
         {/* Second row */}
-        <div className="flex gap-2 px-6">
+        <div className="flex gap-1 px-4">
           {"asdfghjkl".split("").map((key) => (
             <Key key={key} label={key} />
           ))}
         </div>
 
         {/* Third row */}
-        <div className="flex gap-2 px-10">
+        <div className="flex gap-2 px-8">
           {"zxcvbnm".split("").map((key) => (
             <Key key={key} label={key} />
           ))}
-          <SpecialKey label="⌫" className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
+          <SpecialKey label="⌫" className=" ml-2 px-8 bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
         </div>
 
         {/* Bottom row */}
-        <div className="flex gap-2 items-center justify-between w-full px-4">
+        <div className="flex gap-1 items-center justify-between w-full px-2">
           <SpecialKey label="?123" className="bg-[#ffdbb2] text-[14px] font-medium font-['Roboto'] rounded-full" />
           <Key label="," className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
-          <Key label="🌐" className="bg-[#f7f2fa] text-[14px] font-medium font-['Roboto'] text-[#000000]" /> {/* Icono en negro */}
-          <SpecialKey label="" className="bg-[#ffdbb2] w-[100px] rounded-full" /> {/* Espaciador */}
+          <SpecialKey label="" className="bg-[#e6e0e9] w-[160px] rounded-md" />
           <Key label="." className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
-          <SpecialKey label="↵" className="bg-primary-500 text-[14px] font-medium font-['Roboto'] rounded-full" />
-        </div>
+          <SpecialKey label={<span className="text-[24px]">↵</span>} className="bg-primary-500 font-medium font-['Roboto'] rounded-4" />
+          </div>
       </div>
 
       {/* Bottom bar */}
-      <div className="w-full flex justify-center items-center mt-2">
+      <div className="w-full flex justify-center items-center mt-1">
         <div className="w-[108px] h-1 bg-[#1d1b20] rounded-xl"></div>
       </div>
     </div>
