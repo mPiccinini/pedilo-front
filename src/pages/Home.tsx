@@ -30,11 +30,11 @@ const HomePage: React.FC = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center w-full gap-4">
                         <div className="flex flex-row justify-center items-center w-full gap-4">
-                            <BranchButton>
+                            <BranchButton variant={'default'}>
                                 <RecipeIcon iconColor="black" size="24px" />
                                 Recetas
                             </BranchButton>
-                            <BranchButton>
+                            <BranchButton variant={'default'}>
                                 <BasketIcon iconColor="black" size="24px" />
                                 Ingredientes
                             </BranchButton>
