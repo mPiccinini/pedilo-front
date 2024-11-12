@@ -1,7 +1,7 @@
 // FilterChip.tsx
 import { ButtonHTMLAttributes, forwardRef } from "react";
 import { cva, VariantProps } from "class-variance-authority";
-import { cn } from "../utils/UtilFunctions.ts";
+import { cn } from "@/utils/UtilFunctions.ts";
 import CheckIcon from "@/icons/CheckIcon.tsx";
 interface FilterChipProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof chipVariants> {
   label: string;
