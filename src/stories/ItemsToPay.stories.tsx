@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import ItemsToPay from '@/components/ItemsToPay';
-import ItemsToPayProps from '@/components/ItemsToPay';
+import ItemsToPay from '@/components/cart-related/ItemsToPay';
+import ItemsToPayProps from '@/components/cart-related/ItemsToPay';
 
 export default {
   title: 'Components/ItemsToPay',

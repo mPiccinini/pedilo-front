@@ -31,3 +31,19 @@ export const Variant1: Story = {
   },
   render: (args) => <TopBarComponent {...args} />,
 };
+
+export const Variant2: Story = {
+  args: {
+    title: 'Title',
+    variant: 'variant2',
+  },
+  render: (args) => <TopBarComponent {...args} />,
+};
+
+export const Variant3: Story = {
+  args: {
+    title: 'Title',
+    variant: 'variant3',
+  },
+  render: (args) => <TopBarComponent {...args} />,
+};

@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import CardIngredients from '@/components/CardIngredients';
-import CardIngredientsProps from '@/components/CardIngredients';
+import CardIngredients from '@/components/recipe-ingredient-cards/CardIngredients';
+import CardIngredientsProps from '@/components/recipe-ingredient-cards/CardIngredients';
 
 export default {
   title: 'Components/CardIngredients',

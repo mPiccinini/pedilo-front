@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SearchIcon from "../icons/SearchIcon";
+import SearchIcon from "../../icons/SearchIcon";
 
 interface SearchBarProps {
   placeholder?: string;

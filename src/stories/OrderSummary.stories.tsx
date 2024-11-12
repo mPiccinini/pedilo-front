@@ -1,4 +1,4 @@
-import OrderSummary from "@/components/OrderSummary";
+import OrderSummary from "@/components/cart-related/OrderSummary";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof OrderSummary> = {

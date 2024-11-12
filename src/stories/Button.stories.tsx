@@ -1,5 +1,5 @@
 import {ComponentProps} from "react";
-import Button from "@/components/Button.tsx";
+import Button from "@/components/button/Button";
 import {Meta, StoryObj} from "@storybook/react";
 import {fn} from "@storybook/test";
 

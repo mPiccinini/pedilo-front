@@ -24,7 +24,7 @@ const UserInfo: React.FC<AuthFormProps> = ({ variant = "register" }) => {
   return (
     <div className={cn(authFormVariants({ variant }))}>
       {/* Título */}
-      <h2 className="text-headline2 font-poppins text-center text-primary-500 mb-4">
+      <h2 className="text-headline2 font-poppins text-center text-black mb-4">
         {variant === "register" ? "Registrarse" : "Iniciar sesión"}
       </h2>
 
@@ -35,7 +35,7 @@ const UserInfo: React.FC<AuthFormProps> = ({ variant = "register" }) => {
           <input
             type="text"
             placeholder="Texto"
-            className="p-2 border border-secondary-300 rounded-lg outline-none focus:border-secondary-500 text-label3"
+            className="p-2 border border-black shadow-md rounded-lg outline-none focus:border-secondary-500 text-label3"
           />
         </label>
       )}
@@ -44,7 +44,7 @@ const UserInfo: React.FC<AuthFormProps> = ({ variant = "register" }) => {
         <input
           type="email"
           placeholder="Texto"
-          className="p-2 border border-secondary-300 rounded-lg outline-none focus:border-secondary-500 text-label3"
+          className="p-2 border border-black shadow-md rounded-lg outline-none focus:border-secondary-500 text-label3"
         />
       </label>
       <label className="flex flex-col text-title2 font-poppins">
@@ -52,7 +52,7 @@ const UserInfo: React.FC<AuthFormProps> = ({ variant = "register" }) => {
         <input
           type="password"
           placeholder="Texto"
-          className="p-2 border border-secondary-300 rounded-lg outline-none focus:border-secondary-500 text-label3"
+          className="p-2 border border-black shadow-md rounded-lg outline-none focus:border-secondary-500 text-label3"
         />
       </label>
     </div>
