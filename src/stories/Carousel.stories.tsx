@@ -1,10 +1,10 @@
 // Carousel.stories.tsx
 import { Meta, StoryFn } from '@storybook/react';
 import Carousel from '@/components/carousel/Carousel';
-import GenericRecipeCard from '@/components/GenericRecipeCard';
-import IngredientCard from '@/components/CardIngredients';
-import FilterChip from '@/components/FilterChip';
-import TagFoodOrigin from "@/components/TagFoodOrigin.tsx";
+import GenericRecipeCard from '@/components/recipe-ingredient-cards/GenericRecipeCard';
+import IngredientCard from '@/components/recipe-ingredient-cards/CardIngredients';
+import FilterChip from '@/components/search-&-filter/FilterChip';
+import TagFoodOrigin from "@/components/recipe-ingredient-cards/TagFoodOrigin";
 
 export default {
     title: 'Components/Carousel',

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import ItemQuantitySelector from '@/components/ItemQuantitySelector';
+import ItemQuantitySelector from '@/components/cart-related/ItemQuantitySelector';
 
 const meta: Meta<typeof ItemQuantitySelector> = {
   title: 'Components/ItemQuantitySelector',

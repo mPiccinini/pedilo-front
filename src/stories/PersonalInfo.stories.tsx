@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import PersonalInfo from '@/components/PersonalInfo';
+import PersonalInfo from '@/components/user-related/PersonalInfo';
 
 const meta: Meta<typeof PersonalInfo> = {
   title: 'Components/PersonalInfoCard',

@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, forwardRef, useState } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
-import { cn } from '../utils/UtilFunctions.ts';
+import { cn } from '../../utils/UtilFunctions.ts';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {}
 
