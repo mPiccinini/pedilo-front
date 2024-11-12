@@ -14,7 +14,7 @@ import CardIngredients from "@/components/CardIngredients.tsx";
 const HomePage: React.FC = () => {
     return (
         <PhoneScreen>
-            <div className="flex flex-col h-full justify-between w-full">
+            <div className="flex flex-col h-full justify-between w-full overflow-hidden rounded-[30px]">
                 <TopBarComponent title="Home" variant="variant1" />
                 <div className="flex flex-col gap-10 flex-grow w-full">
                     <div className="relative flex flex-col items-center justify-center w-full">
