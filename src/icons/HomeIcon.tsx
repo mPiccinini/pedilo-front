@@ -1,7 +1,13 @@
-import { forwardRef } from 'react';
+import {forwardRef, useState} from 'react';
 import { IconInterface } from './IconInterface';
 
+// @ts-ignore
 export const HomeIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'variant1' | 'variant2' }>(({ iconColor = "currentColor", size = "24px", variant = "variant1" }, ref) => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleMouseDown = () => setIsClicked(true);
+    const handleMouseUp = () => setIsClicked(false);
+
     return (
         <svg
             ref={ref}
@@ -11,6 +17,10 @@ export const HomeIcon = forwardRef<SVGSVGElement, IconInterface & { variant?: 'v
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={`transition-transform transform ${isClicked ? "scale-110" : ""} cursor-pointer`}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
         >
             {variant === "variant1" ? (
                 <path 

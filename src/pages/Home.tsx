@@ -1,15 +1,15 @@
 import React from 'react';
 import PhoneScreen from '@/components/screens/PhoneScreen';
 import TopBarComponent from "@/components/topBars/TopBarComponent";
-import SearchBar from "@/components/SearchBar";
-import BranchButton from "@/components/BranchButton";
+import SearchBar from "@/components/search-&-filter/SearchBar";
+import BranchButton from "@/components/button/BranchButton";
 import BasketIcon from "@/icons/BasketIcon";
 import RecipeIcon from "@/icons/RecipeIcon";
 import NavBar from "@/components/navBar/NavBarComponent";
 import ImageComponent from "@/components/imageComponent/ImageComponent.tsx";
 import Carousel from "@/components/carousel/Carousel.tsx";
-import GenericRecipeCard from "@/components/GenericRecipeCard.tsx";
-import CardIngredients from "@/components/CardIngredients.tsx";
+import GenericRecipeCard from "@/components/recipe-ingredient-cards/GenericRecipeCard";
+import CardIngredients from "@/components/recipe-ingredient-cards/CardIngredients";
 
 const HomePage: React.FC = () => {
     return (
@@ -30,11 +30,11 @@ const HomePage: React.FC = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center w-full gap-4">
                         <div className="flex flex-row justify-center items-center w-full gap-4">
-                            <BranchButton>
+                            <BranchButton variant={'default'}>
                                 <RecipeIcon iconColor="black" size="24px" />
                                 Recetas
                             </BranchButton>
-                            <BranchButton>
+                            <BranchButton variant={'default'}>
                                 <BasketIcon iconColor="black" size="24px" />
                                 Ingredientes
                             </BranchButton>

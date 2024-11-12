@@ -1,5 +1,6 @@
-import {Meta, StoryFn} from '@storybook/react';
-import TagFoodOrigin, { TagFoodOriginProps } from '@/components/TagFoodOrigin';
+// TagFoodOrigin.stories.tsx
+import {Meta, Story} from '@storybook/react';
+import TagFoodOrigin, { TagFoodOriginProps } from '@/components/recipe-ingredient-cards/TagFoodOrigin';
 
 export default {
     title: 'Components/TagFoodOrigin',

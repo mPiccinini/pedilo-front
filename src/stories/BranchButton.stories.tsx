@@ -1,5 +1,5 @@
 import {ComponentProps} from "react";
-import BranchButton from "@/components/BranchButton.tsx";
+import BranchButton from "@/components/button/BranchButton";
 import {Meta, StoryObj} from "@storybook/react";
 import {fn} from "@storybook/test";
 import BasketIcon from "@/icons/BasketIcon.tsx";

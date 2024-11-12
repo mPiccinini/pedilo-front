@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import ListItem from '@/components/ListItem';
-import ListItemProps  from '@/components/ListItem';
+import ListItem from '@/components/search-&-filter/ListItem';
+import ListItemProps  from '@/components/search-&-filter/ListItem';
 
 export default {
   title: 'Components/ListItem',

@@ -1,4 +1,4 @@
-import RecipeIngredientsList from "@/components/RecipeIngredientsList";
+import RecipeIngredientsList from "@/components/cart-related/RecipeIngredientsList";
 import CheckBoxIcon from "@/icons/CheckBoxIcon";
 import { Meta, StoryObj } from "@storybook/react";
 

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import SearchResult from "@/components/SearchResult"; 
+import SearchResult from "@/components/search-&-filter/SearchResult"; 
 
 const meta: Meta<typeof SearchResult> = {
   title: "Components/SearchResult",

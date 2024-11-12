@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import SearchBar from "@/components/SearchBar";
+import SearchBar from "@/components/search-&-filter/SearchBar";
 
 type StoryProps = {
   placeholder: string | undefined;

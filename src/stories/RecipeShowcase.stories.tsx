@@ -1,4 +1,4 @@
-import RecipeShowcase from "@/components/RecipeShowcase";
+import RecipeShowcase from "@/components/recipe-ingredient-cards/RecipeShowcase";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof RecipeShowcase> = {

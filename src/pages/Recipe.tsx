@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import PhoneScreen from '@/components/screens/PhoneScreen';
 import ArrowBackIcon from "@/icons/ArrowBackIcon.tsx";
-import SearchBar from "@/components/SearchBar.tsx";
+import SearchBar from "@/components/search-&-filter/SearchBar";
 import ImageComponent from "@/components/imageComponent/ImageComponent.tsx";
 import StarIcon from "@/icons/StarIcon.tsx";
 import { ClockIcon } from "@/icons/ClockIcon.tsx";
-import Button from "@/components/Button.tsx";
-import Tag from "@/components/Tag.tsx";
-import RecipeIngredientsList from "@/components/RecipeIngredientsList.tsx";
-import RecipeInfo from "@/components/RecipeInfo.tsx";
+import Button from "@/components/button/Button";
+import Tag from "@/components/search-&-filter/Tag";
+import RecipeIngredientsList from "@/components/cart-related/RecipeIngredientsList";
+import RecipeInfo from "@/components/recipe-ingredient-cards/RecipeInfo";
 
 const HomePage: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

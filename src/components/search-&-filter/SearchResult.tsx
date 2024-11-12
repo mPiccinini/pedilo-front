@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeIcon from "../icons/RecipeIcon"; 
+import RecipeIcon from "../../icons/RecipeIcon"; 
 import Divider from "@/icons/Divider";
 
 const SearchResult: React.FC<{ title: string; subtitle: string }> = ({ title, subtitle }) => {

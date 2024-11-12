@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, forwardRef, useState } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
-import { cn } from '../utils/UtilFunctions.ts';
+import { cn } from '../../utils/UtilFunctions.ts';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {}
 
@@ -31,7 +31,7 @@ const BranchButton = forwardRef<HTMLButtonElement, ButtonProps>(({ className, va
     return (
         <button
             ref={ref}
-            className={cn(buttonVariants({ variant: isPressed ? 'pressed' : 'default', className }))}
+            className={cn(buttonVariants({ variant: !isPressed && variant === 'default' ? 'default' : 'pressed', className }))}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp} // Ensures it resets when the mouse leaves the button
