@@ -61,17 +61,17 @@ const Keyboard: FC = () => {
           {"zxcvbnm".split("").map((key) => (
             <Key key={key} label={key} />
           ))}
-          <SpecialKey label="⌫" className=" ml-2 px-8 bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
+          <SpecialKey label="⌫" className="ml-2 px-8 bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
         </div>
 
         {/* Bottom row */}
-        <div className="flex gap-1 items-center justify-between w-full px-2">
+        <div className="flex gap-1 items-center justify-center w-full px-2">
           <SpecialKey label="?123" className="bg-[#ffdbb2] text-[14px] font-medium font-['Roboto'] rounded-full" />
           <Key label="," className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
-          <SpecialKey label="" className="bg-[#e6e0e9] w-[301px] rounded-md" />
+          <SpecialKey label="" className="bg-[#e6e0e9] flex-grow max-w-[300px] rounded-md" />
           <Key label="." className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
           <SpecialKey label={<span className="text-[24px]">↵</span>} className="bg-primary-500 font-medium font-['Roboto'] rounded-4" />
-          </div>
+        </div>
       </div>
 
       {/* Bottom bar */}
