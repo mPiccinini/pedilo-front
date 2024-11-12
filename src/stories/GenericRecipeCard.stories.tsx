@@ -55,7 +55,7 @@ Default.args = {
   heartVariant: "variant1",
   starVariants: ["variant1", "variant1", "variant1", "variant1", "variant1"],
   title: "Tarta de Manzana",
-  prepTime: "30 minutos",
+  prepTime: "30",
   difficultyLevel: "Fácil",
-  actionTexts: ["Ver receta", "Añadir a favoritos"],
+  actionTexts: ["Tab1", "Tab2"],
 };

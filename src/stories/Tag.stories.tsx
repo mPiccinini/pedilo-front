@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react';
+import {Meta, StoryFn} from '@storybook/react';
 import Tag from '@/components/search-&-filter/Tag';
 
 export default {

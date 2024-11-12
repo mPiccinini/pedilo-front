@@ -29,11 +29,3 @@ Variant1.args = {
   title: 'Tomate',
   description: 'Redondo',
 };
-
-export const Variant2: Story = Template.bind({});
-Variant2.args = {
-  imageSrc: 'https://via.placeholder.com/109x80', 
-  variant: 'variant2',
-  title: 'Zanahoria',
-  description: 'Fresca',
-};

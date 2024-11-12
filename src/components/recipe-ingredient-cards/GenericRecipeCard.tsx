@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { HeartIcon } from "@/icons/HeartIcon";
 import { StarIcon } from "@/icons/StarIcon";
+import Tag from "@/components/search-&-filter/Tag.tsx";
 
 interface GenericRecipeCardProps {
   imageSrc: string;
@@ -52,13 +53,8 @@ function GenericRecipeCard({
             </div>
           </div>
           <div className="flex space-x-1">
-            {actionTexts.map((text, idx) => (
-                <div
-                    key={idx}
-                    className="bg-[#EBFCFF] text-gray-700 px-2 py-0.5 rounded-full text-xs flex items-center justify-center"
-                >
-                  {text}
-                </div>
+            {actionTexts.map((text) => (
+                <Tag text={text}></Tag>
             ))}
           </div>
         </div>
