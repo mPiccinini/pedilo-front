@@ -68,7 +68,7 @@ const Keyboard: FC = () => {
         <div className="flex gap-1 items-center justify-between w-full px-2">
           <SpecialKey label="?123" className="bg-[#ffdbb2] text-[14px] font-medium font-['Roboto'] rounded-full" />
           <Key label="," className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
-          <SpecialKey label="" className="bg-[#e6e0e9] w-[160px] rounded-md" />
+          <SpecialKey label="" className="bg-[#e6e0e9] w-[301px] rounded-md" />
           <Key label="." className="bg-[#e6e0e9] text-[14px] font-medium font-['Roboto'] rounded-md" />
           <SpecialKey label={<span className="text-[24px]">↵</span>} className="bg-primary-500 font-medium font-['Roboto'] rounded-4" />
           </div>
